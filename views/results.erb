@@ -6,4 +6,8 @@
 
 <h2>Consonants: <%=@analyzed_text.count_of_consonants%></h2>
 
-<h2>Most Common Letter: <%=@analyzed_text.most_used_letter%>, used <%=@analyzed_text.scan(/[<%=@analyzed_text.most_used_letter.downcase%>]/).count%> times</h2> 
+
+
+
+
+<h2>Most Common Letter: <%=@analyzed_text.most_used_letter.keys[0].upcase%>, used <%=@analyzed_text.most_used_letter.fetch(@analyzed_text.most_used_letter.keys[0])%> times</h2>
