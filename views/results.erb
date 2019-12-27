@@ -8,15 +8,7 @@
 
 
 <%x = @analyzed_text.most_used_letter-%>
+<%y = x.keys[0]-%>
 
 
-<h2>Most Common Letter: <%=x.keys[0].upcase%>, used 
-
-
-<%=x[x]%>
-
-
-
-@analyzed_text.most_used_letter.keys[0].upcase%>,</h2>
-
-
+<h2>Most Common Letter: <%=y.upcase%>, used <%=x[y]%> times</h2>
